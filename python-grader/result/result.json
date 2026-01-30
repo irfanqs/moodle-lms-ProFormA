@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "score": 100,
+  "tests_run": 2,
+  "tests_passed": 2,
+  "output": "test_basic (test_solution.TestAdd.test_basic) ... ok\ntest_negative (test_solution.TestAdd.test_negative) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n"
+}

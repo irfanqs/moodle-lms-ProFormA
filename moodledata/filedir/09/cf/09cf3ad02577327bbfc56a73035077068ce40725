@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task xmlns="urn:proforma:v2.0" lang="de" uuid="bbbf6679-0226-4fb3-8da0-4f370dd027cb">
+    <title>ProFormA question</title>
+    <description>description</description>
+    <proglang version="1.8">java</proglang>
+    <submission-restrictions/>
+    <files>
+        <file id="MS" used-by-grader="false" visible="no">
+            <embedded-txt-file filename="modelsolution.java">// no model solution available </embedded-txt-file>
+        </file>
+    </files>
+    <model-solutions>
+        <model-solution id="1">
+            <filerefs>
+                <fileref refid="MS"/>
+            </filerefs>
+        </model-solution>
+    </model-solutions>
+    <tests>
+        <test id="compiler">
+            <title>Compiler</title>
+            <test-type>java-compilation</test-type>
+            <test-configuration/>
+        </test>
+    </tests>
+    <grading-hints>
+        <root/>
+    </grading-hints>
+    <meta-data/>
+</task>

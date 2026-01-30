@@ -1,0 +1,5 @@
+s:261:"<p>location where the student's submission can be found. Must contain exactly one placeholder:<br />
+{group} = groupname of the group that the student belongs to<br />
+{groupl} = like {group} in lowercase<br />
+{input} = identifier to be entered by student</p>
+";

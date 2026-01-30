@@ -1,0 +1,11 @@
+O:8:"stdClass":26:{s:2:"id";s:2:"26";s:8:"category";s:1:"6";s:6:"parent";s:1:"0";s:4:"name";s:11:"Soal test 1";s:12:"questiontext";s:19:"<p>Print Hello!</p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:7:"penalty";d:0;s:5:"qtype";s:8:"proforma";s:6:"length";s:1:"1";s:5:"stamp";s:34:"localhost:8080+260129032206+DKAs7Z";s:11:"timecreated";s:10:"1769656926";s:12:"timemodified";s:10:"1769656926";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:8:"idnumber";N;s:9:"contextid";s:2:"23";s:6:"status";s:5:"ready";s:9:"versionid";s:2:"26";s:7:"version";s:1:"3";s:19:"questionbankentryid";s:1:"3";s:14:"categoryobject";O:8:"stdClass":9:{s:2:"id";s:1:"6";s:4:"name";s:25:"Default for Test Coding 2";s:9:"contextid";s:2:"23";s:4:"info";s:69:"The default category for questions shared in context 'Test Coding 2'.";s:10:"infoformat";s:1:"0";s:5:"stamp";s:34:"localhost:8080+260128065632+HjsAPC";s:6:"parent";s:1:"5";s:9:"sortorder";s:3:"999";s:8:"idnumber";N;}s:7:"options";O:8:"stdClass":29:{s:2:"id";s:2:"26";s:10:"questionid";s:2:"26";s:14:"responseformat";s:6:"editor";s:18:"responsefieldlines";s:2:"15";s:11:"attachments";s:1:"0";s:8:"maxbytes";s:1:"0";s:9:"filetypes";s:0:"";s:7:"comment";s:0:"";s:13:"commentformat";s:1:"1";s:4:"uuid";N;s:16:"responsetemplate";s:0:"";s:14:"vcsuritemplate";s:48:"https://server/path/to/project/{group}/subfolder";s:8:"vcslabel";s:0:"";s:9:"vcssystem";s:1:"1";s:14:"taskrepository";N;s:8:"taskpath";N;s:16:"responsefilename";s:10:"jawaban.py";s:19:"programminglanguage";s:6:"python";s:12:"taskfilename";s:8:"task.xml";s:11:"taskstorage";s:1:"7";s:9:"downloads";s:0:"";s:9:"templates";s:0:"";s:13:"modelsolfiles";s:0:"";s:19:"aggregationstrategy";s:1:"2";s:12:"gradinghints";s:230:"<?xml version="1.0" encoding="UTF-8"?>
+<grading-hints>
+ <root function="sum">
+  <test-ref ref="1" weight="1">
+   <title>jawaban.py</title>
+   <description/>
+   <test-type>python</test-type>
+  </test-ref>
+ </root>
+</grading-hints>
+";s:15:"proformaversion";N;s:14:"expandcollapse";s:1:"0";s:14:"inlinemessages";s:1:"1";s:7:"answers";a:0:{}}s:5:"hints";a:0:{}}

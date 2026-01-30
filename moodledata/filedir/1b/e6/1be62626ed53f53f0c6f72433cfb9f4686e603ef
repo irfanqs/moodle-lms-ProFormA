@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task xmlns="urn:proforma:v2.0" lang="de" uuid="72611d3c-b9ee-4131-8e32-508f87dc0bd3" xmlns:unit="urn:proforma:tests:unittest:v1.1">
+    <title>Question 1</title>
+    <description>&lt;p&gt;Buatkan program python yang bisa melakukan print &quot;Hello World!&quot; sebanyak 5 kali&lt;/p&gt;</description>
+    <proglang version="">python</proglang>
+    <submission-restrictions/>
+    <files>
+        <file id="1" used-by-grader="true" visible="no">
+            <embedded-txt-file filename="test_pythontest1.py">for i in range(5):&#13;
+    print(&quot;Hello World!&quot;)</embedded-txt-file>
+        </file>
+        <file id="MS" used-by-grader="false" visible="no">
+            <embedded-txt-file filename="modelsolution.java">// no model solution available </embedded-txt-file>
+        </file>
+    </files>
+    <model-solutions>
+        <model-solution id="1">
+            <filerefs>
+                <fileref refid="MS"/>
+            </filerefs>
+        </model-solution>
+    </model-solutions>
+    <tests>
+        <test id="1">
+            <title>solution1.py</title>
+            <test-type>unittest</test-type>
+            <test-configuration>
+                <filerefs>
+                    <fileref refid="1"/>
+                </filerefs>
+                <unit:unittest/>
+            </test-configuration>
+        </test>
+    </tests>
+    <grading-hints>
+        <root/>
+    </grading-hints>
+    <meta-data/>
+</task>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task xmlns="urn:proforma:v2.0" lang="de" uuid="cefca46e-3572-4db2-9123-a0ba154d31f3" xmlns:unit="urn:proforma:tests:unittest:v1.1">
+    <title>Question - 2</title>
+    <description>&lt;p&gt;Print 1 sampai 5 dengan for loop&lt;/p&gt;</description>
+    <proglang version="">python</proglang>
+    <submission-restrictions/>
+    <files>
+        <file id="1" used-by-grader="true" visible="no">
+            <embedded-txt-file filename="test_pythontest1.py">for i in range(6):&#13;
+    print(i)</embedded-txt-file>
+        </file>
+        <file id="MS" used-by-grader="false" visible="no">
+            <embedded-txt-file filename="modelsolution.java">// no model solution available </embedded-txt-file>
+        </file>
+    </files>
+    <model-solutions>
+        <model-solution id="1">
+            <filerefs>
+                <fileref refid="MS"/>
+            </filerefs>
+        </model-solution>
+    </model-solutions>
+    <tests>
+        <test id="1">
+            <title>solution2.py</title>
+            <test-type>unittest</test-type>
+            <test-configuration>
+                <filerefs>
+                    <fileref refid="1"/>
+                </filerefs>
+                <unit:unittest/>
+            </test-configuration>
+        </test>
+    </tests>
+    <grading-hints>
+        <root/>
+    </grading-hints>
+    <meta-data/>
+</task>

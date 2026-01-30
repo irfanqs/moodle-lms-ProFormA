@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task xmlns="urn:proforma:v2.0" lang="de" uuid="899fd3b8-670d-4f8b-9729-7492b8dab91f" xmlns:unit="urn:proforma:tests:unittest:v1.1">
+    <title>Question 1</title>
+    <description>&lt;p&gt;Buatkan program python yang bisa melakukan print &quot;Hello World!&quot; sebanyak 5 kali&lt;/p&gt;</description>
+    <proglang version="">python</proglang>
+    <submission-restrictions/>
+    <files>
+        <file id="1" used-by-grader="true" visible="no">
+            <embedded-txt-file filename="test_pythontest1.py">import unittest&#13;
+import sys&#13;
+from io import StringIO&#13;
+import subprocess&#13;
+import os&#13;
+&#13;
+class TestOutput(unittest.TestCase):&#13;
+    def test_hello_world_5_times(self):&#13;
+        # Cari file python student (bukan test file)&#13;
+        student_file = None&#13;
+        for f in os.listdir('.'):&#13;
+            if f.endswith('.py') and not f.startswith('test'):&#13;
+                student_file = f&#13;
+                break&#13;
+        &#13;
+        self.assertIsNotNone(student_file, &quot;No student Python file found&quot;)&#13;
+        &#13;
+        # Jalankan sebagai subprocess untuk menangkap output dengan benar&#13;
+        result = subprocess.run(&#13;
+            ['python3', student_file],&#13;
+            capture_output=True,&#13;
+            text=True,&#13;
+            timeout=10&#13;
+        )&#13;
+        &#13;
+        output = result.stdout.strip()&#13;
+        expected = &quot;Hello World!\n&quot; * 5&#13;
+        &#13;
+        self.assertEqual(output, expected.strip())&#13;
+&#13;
+if __name__ == '__main__':&#13;
+    unittest.main()</embedded-txt-file>
+        </file>
+        <file id="MS" used-by-grader="false" visible="no">
+            <embedded-txt-file filename="modelsolution.java">// no model solution available </embedded-txt-file>
+        </file>
+    </files>
+    <model-solutions>
+        <model-solution id="1">
+            <filerefs>
+                <fileref refid="MS"/>
+            </filerefs>
+        </model-solution>
+    </model-solutions>
+    <tests>
+        <test id="1">
+            <title>solution1.py</title>
+            <test-type>unittest</test-type>
+            <test-configuration>
+                <filerefs>
+                    <fileref refid="1"/>
+                </filerefs>
+                <unit:unittest/>
+            </test-configuration>
+        </test>
+    </tests>
+    <grading-hints>
+        <root/>
+    </grading-hints>
+    <meta-data/>
+</task>

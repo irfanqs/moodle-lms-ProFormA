@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task xmlns="urn:proforma:v2.0" lang="de" uuid="65dd74b4-1b3e-42e6-a4fe-70ea038d6a80" xmlns:unit="urn:proforma:tests:unittest:v1.1">
+    <title>Question 1</title>
+    <description>&lt;p&gt;Buatkan program python yang bisa melakukan print &quot;Hello World!&quot; sebanyak 5 kali&lt;/p&gt;</description>
+    <proglang version="">python</proglang>
+    <submission-restrictions/>
+    <files>
+        <file id="1" used-by-grader="true" visible="no">
+            <embedded-txt-file filename="test_pythontest1.py">import unittest&#13;
+import sys&#13;
+from io import StringIO&#13;
+&#13;
+class TestOutput(unittest.TestCase):&#13;
+    def test_hello_world_5_times(self):&#13;
+        captured = StringIO()&#13;
+        sys.stdout = captured&#13;
+        &#13;
+        exec(open('solution2.py').read())&#13;
+        &#13;
+        sys.stdout = sys.__stdout__&#13;
+        output = captured.getvalue().strip()&#13;
+        &#13;
+        expected = &quot;Hello World!\n&quot; * 5&#13;
+        self.assertEqual(output, expected.strip())&#13;
+&#13;
+if __name__ == '__main__':&#13;
+    unittest.main()&#13;
+</embedded-txt-file>
+        </file>
+        <file id="MS" used-by-grader="false" visible="no">
+            <embedded-txt-file filename="modelsolution.java">// no model solution available </embedded-txt-file>
+        </file>
+    </files>
+    <model-solutions>
+        <model-solution id="1">
+            <filerefs>
+                <fileref refid="MS"/>
+            </filerefs>
+        </model-solution>
+    </model-solutions>
+    <tests>
+        <test id="1">
+            <title>solution1.py</title>
+            <test-type>unittest</test-type>
+            <test-configuration>
+                <filerefs>
+                    <fileref refid="1"/>
+                </filerefs>
+                <unit:unittest/>
+            </test-configuration>
+        </test>
+    </tests>
+    <grading-hints>
+        <root/>
+    </grading-hints>
+    <meta-data/>
+</task>
